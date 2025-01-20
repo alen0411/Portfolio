@@ -1,0 +1,78 @@
+* {
+    background-color: rgb(199, 195, 195);
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+    padding: 2em;
+    align-content: center;
+}
+
+#title  {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 50px;
+    align-content: center;
+    border-bottom: 2px solid black;
+}
+
+body  {
+    margin: 0;
+    padding: var(--spacing-3)0;
+    display: flex;
+    flex-direction: column;  
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-3) 0;
+    }
+
+.navigation-items {
+    display: flex;
+    list-style-type: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+    align-items: center;
+    margin: 0;
+    margin-left: auto;
+    padding-right: 2em;
+}
+
+.nav-item {
+    margin-left: 2em;
+}
+
+a  {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding: var(--spacing-3) 0;
+}
+
+#about-me  {
+    margin-left: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.about-me-container  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.about-me-text-container  {
+    max-width: 800px;
+}
+
+.portrait  {
+    width: 300px;
+    height: auto;
+    justify-content: right;
+    padding-right: 2em;
+
+}
