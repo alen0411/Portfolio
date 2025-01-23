@@ -5,18 +5,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>My Portfolio_Alen Gaube</title>
         <link rel="stylesheet" href="./style.css" type="text/css">
+        <script>
+            function hideImage(){
+                document.getElementById('loading-image').style.visibility='hidden';
+                document.getElementById('button').style.visibility='hidden';
+            }
+           </script>
     </head>
     <body>
         <nav>
             <div>
                 <img src="./images/logo_AG.png" alt="AG" id="logo">
             </div>
-            <h2 id="title">Alen Gaube</h2>
+            <h1 id="title"><a href="./index.html">Alen Gaube</h1>
             <ul class="navigation-items">
                 <li class="nav-item"><a href="#about-me">About Me</a></li>
                 <li class="nav-item"><a href="#projects">Project</a></li>
                 <li class="nav-item"><a href="#skills">Skills</a></li>
-                <li class="nav-item"><a href="#contact">Contact</a></li>
+                <li class="nav-item"><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
 
@@ -24,7 +30,7 @@
             <section id="about-me">
                 <div class="about-me-container">
                     <div class="about-me-text-container">
-                        <h3>About Me</h3>
+                        <h2>About Me</h2>
                             <p>
                                 Hi! My name is Alen and for the past 7 years I have been working as an Architect.
                                 While building design is very interesting, I have always been fascinated and passionate by computer science and technology. 
@@ -35,21 +41,56 @@
                                 Shortly after, I had enrolled in an online Codecademy FE Developer course to obtain a deeper knowledge and overview of my new field and future profession.
                             </p>
                             <p>
-                                Being halfway through my course, I am enjoying every Bit of it and I am looking forward to completing it and soon start working as a Front End Developer. 
+                                Being halfway through my course, I am enjoying every Bit of it and I am looking forward to completing it soon and start working as a Front End Developer. 
                             </p>
+                    </div>
+                    <div>
+                    <input id="button" type="button" value="Click me" onclick="hideImage()">
                     </div>
                     <img
                         src="./images/profile_picture.jpg"
                         alt="AG_profile_picture"
                         class="portrait"
+                        id="loading-image"
+                        style="visibility: visible;"
                     />
                 </div>
             </section>
 
             <section id="projects">
-                
+                <h2>Projects</h2>
+                <details class="projects">
+                    <summary class="project-title">
+                        <h3>Architect's Visualizations</h3>
+                            <img src="./images/Rock_house/Rock_house_01.png"
+                            alt="Rock_house_image_01"
+                            class="project-image">
+                            <img src="./images/Rock_house/Rock_house_02.png"
+                            alt="Rock_house_image_02"
+                            class="project-image">
+                            <img src="./images/Rock_house/Rock_house_03.png"
+                            alr="Rock_house_image_03"
+                            class="project-image">
+                            <p>Rock House project renders made with Unreal Enigine 5.</p>
+                        <h3>Web & Programming Projects</h3>
+                            <p>View and follow my work <a href="https://github.com/alen0411" id="gh-link">here</a></p>
+                    </summary>
+                </details>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                    <div class="skills-container">
+                        <h3>Unreal Engine 5</h3>
+                        <h3>HTML & CSS</h3>
+                        <h3>JavaScript</h3>
+                        <h3>Git & GitHub</h3>
+                    </div>
             </section>
         </main>
+
+        <footer> Alen Gaube <span class="copyright">&#169</span> Copyright </footer>
            
     </body>
 </html>
+

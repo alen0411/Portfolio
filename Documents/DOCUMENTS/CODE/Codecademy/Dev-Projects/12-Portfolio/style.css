@@ -13,7 +13,6 @@
     font-family:'Courier New', Courier, monospace;
     font-size: 50px;
     align-content: center;
-    border-bottom: 2px solid black;
 }
 
 body  {
@@ -25,11 +24,10 @@ body  {
     margin: 0 auto;
 }
 
-nav{
+nav  {
     display: flex;
-    align-items: center;
-    padding: var(--spacing-3) 0;
-    }
+    align-items: center;    
+}
 
 .navigation-items {
     display: flex;
@@ -40,6 +38,10 @@ nav{
     margin: 0;
     margin-left: auto;
     padding-right: 2em;
+}
+
+.nav-item:hover  {
+    text-decoration: underline;
 }
 
 .nav-item {
@@ -53,20 +55,21 @@ a  {
     padding: var(--spacing-3) 0;
 }
 
-#about-me  {
+#about-me, #projects, #skills, #contact {
     margin-left: 2em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.about-me-container  {
+.about-me-container, .projects {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+        
 }
 
 .about-me-text-container  {
     max-width: 800px;
+    min-width: 400px;
 }
 
 .portrait  {
@@ -74,5 +77,48 @@ a  {
     height: auto;
     justify-content: right;
     padding-right: 2em;
+}
 
+#button  {
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.project-image  {
+    display:inline-flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 380px;
+}
+
+.skills-container  {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+#arrow-down  {
+    width: 2em;
+}
+
+i  {
+    font-size: 2.5em;
+}
+
+#icons  {
+    padding: 1em;
+    padding-left: 0;
+}
+
+footer  {
+    align-self: center;
+    margin-bottom: 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media only screen and (max-width: 600px)  {
+    .about-me-container {
+        flex-direction: column;
+    }
 }
